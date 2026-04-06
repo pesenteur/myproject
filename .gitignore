@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Conda
+.conda/
+
+# Logs
+*.log
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Mac
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Frontend
+node_modules/
+dist/
+
+# Backend temporary files
+backend/app/server/tmp/
+backend/tmp/
+
+# Model files
+*.h5
+*.pt
+*.pth
+*.pkl
+*.ckpt
+*.onnx
+*.bin
+
+# Environment/config secrets
+.env
+.env.*
