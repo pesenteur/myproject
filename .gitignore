@@ -1,47 +1,73 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.venv/
-venv/
-env/
-
-# Conda
-.conda/
-
-# Logs
-*.log
-
-# Temp files
-tmp/
-temp/
-*.tmp
-
-# Mac
+# =========================
+# OS / Editor
+# =========================
 .DS_Store
-
-# IDE
+Thumbs.db
 .idea/
 .vscode/
 
-# Frontend
-node_modules/
-dist/
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.gz
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
 
-# Backend temporary files
-backend/app/server/tmp/
-backend/tmp/
+# Virtual env / conda
+.venv/
+venv/
+env/
+ENV/
 
-# Model files
-*.h5
-*.pt
-*.pth
-*.pkl
-*.ckpt
-*.onnx
-*.bin
-
-# Environment/config secrets
+# =========================
+# Secrets / env
+# =========================
 .env
 .env.*
+*.pem
+*.key
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Frontend
+# =========================
+node_modules/
+dist/
+.vite/
+
+# =========================
+# Backend runtime outputs
+# =========================
+backend/app/server/tmp/
+backend/app/server/**/tmp/
+tmp/
+
+# =========================
+# Alignment / mmseqs generated data
+# =========================
+backend/app/server/align/mmseqs_db/
+backend/app/server/align/mmseqs_fasta/
+
+# =========================
+# Model weights / heavy artifacts
+# =========================
+*.h5
+*.ckpt
+*.pth
+*.pt
+
+# =========================
+# Optional large local outputs
+# =========================
+*.npz

@@ -83,6 +83,20 @@ def run_all_predictors(sequence: str) -> dict:
             data_dir=str(SERVER_DIR / "align" / "data"),
             top_k=50,
             threshold=0.5,
+
+            max_workers=4,
+            show_progress=False,
+            batch_size=64,
+
+            min_valid_residues=5,
+            prefilter_multiplier=6,
+
+            use_mmseqs_prefilter=True,
+            mmseqs_max_seqs=300,
+            mmseqs_sensitivity=4.0,
+            mmseqs_threads=4,
+            mmseqs_fasta_dir=str(SERVER_DIR / "align" / "mmseqs_fasta"),
+            mmseqs_db_dir=str(SERVER_DIR / "align" / "mmseqs_db"),
         )
         timings["run_uniref50_alignment"] = round(time.perf_counter() - t0, 4)
 

@@ -45,7 +45,7 @@ def load_opus_go_model(run_idx: Optional[int] = None):
             training=False
         )
 
-        print("OPUS-GO model variables:", len(model.trainable_variables))
+        print("OPUS-ResInsight model variables:", len(model.trainable_variables))
         model.load_model(name=str(MODEL_PATH))
 
         _MODEL = model
